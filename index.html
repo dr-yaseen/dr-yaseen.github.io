@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://dr-yaseen.github.io/" />
+    <link rel="alternate" hreflang="ar" href="https://dr-yaseen.github.io/index.html" />
+    <link rel="alternate" hreflang="en" href="https://dr-yaseen.github.io/index-en.html" />
+    <link rel="alternate" hreflang="x-default" href="https://dr-yaseen.github.io/" />
+    <title>د. ياسين الخالدي | الموقع الرسمي</title>
+    
+    <!-- ===== أيقونات الموقع (لجميع الأجهزة) ===== -->
+    <link rel="icon" type="image/x-icon" href="images/icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-touch-icon.png">
+    <link rel="manifest" href="site_ar.webmanifest">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/icon/android-chrome-512x512.png">
+    
+    <!-- ===== Open Graph (للمشاركة في فيسبوك، واتساب، تليجرام، لينكد إن) ===== -->
+<meta property="og:title" content="د. ياسين الخالدي | الموقع الرسمي">
+<meta property="og:description" content="د. ياسين الخالدي، أخصائي مختبرات طبية مع أكثر من 20 عامًا من الخبرة في علم الأحياء الدقيقة وعلم الفيروسات المناعية.">
+<meta property="og:image" content="https://dr-yaseen.github.io/images/slider/og-image.png">
+<meta property="og:url" content="https://dr-yaseen.github.io/">
+<meta property="og:type" content="website">
+
+<!-- ===== Twitter Cards (لتحسين المشاركة في تويتر / X) ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="د. ياسين الخالدي | الموقع الرسمي">
+<meta name="twitter:description" content="د. ياسين الخالدي، أخصائي مختبرات طبية مع أكثر من 20 عامًا من الخبرة في علم الأحياء الدقيقة وعلم الفيروسات المناعية.">
+<meta name="twitter:image" content="https://dr-yaseen.github.io/images/slider/og-image.png">
+    
+    <!-- ===== وصف الموقع (لتحسين ظهوره في بحث جوجل) ===== -->
+    <meta name="description" content="د. ياسين الخالدي، أخصائي مختبرات طبية مع أكثر من 20 عامًا من الخبرة في علم الأحياء الدقيقة وعلم الفيروسات المناعية.">
+    
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "د. ياسين الخالدي",
+  "image": "https://dr-yaseen.github.io/images/slider/personal-photo-of-dr-yaseen.webp",
+  "@id": "https://dr-yaseen.github.io/",
+  "url": "https://dr-yaseen.github.io/",
+  "telephone": "+967773224293",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "عدن",
+    "addressCountry": "YE"
+  },
+  "description": "أخصائي مختبرات طبية مع أكثر من 20 عاماً من الخبرة في علم الأحياء الدقيقة وعلم الفيروسات المناعية.",
+  "sameAs": [
+    "https://www.facebook.com/alkhaledi009",
+    "https://x.com/yaseenalkhaledi",
+    "https://www.instagram.com/yaseenalkhaledi"
+  ]
+}
+</script>
+
+    
+    <!-- ===== المكتبات والخطوط ===== -->
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>        
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts (Tajawal) -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- ملفات Preloader -->
+    
+    
+    <style>
+    	/* ===== Preloader - تخطيط القلب المتحرك ===== */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+/* تخطيط القلب (من Uiverse.io مع تعديل اللون والحجم) */
+.preloader-ecg svg polyline {
+    fill: none;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.preloader-ecg svg polyline#back {
+    fill: none;
+    stroke: #e5e7eb;
+}
+
+.preloader-ecg svg polyline#front {
+    fill: none;
+    stroke: #2563eb;
+    stroke-dasharray: 48, 144;
+    stroke-dashoffset: 192;
+    animation: dash_682 2s linear infinite;
+    animation-delay: 0s;
+}
+
+.preloader-ecg svg polyline#front2 {
+    fill: none;
+    stroke: #2563eb;
+    stroke-dasharray: 48, 144;
+    stroke-dashoffset: 192;
+    animation: dash_682 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes dash_682 {
+    72.5% {
+        opacity: 0;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* اسم الدكتور مع وميض */
+.preloader-name {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1f2937;
+    font-family: 'Tajawal', sans-serif;
+    animation: subtlePulse 1.5s ease-in-out infinite;
+}
+
+.preloader-title {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-top: 5px;
+    font-family: 'Tajawal', sans-serif;
+    animation: subtlePulse 1.5s ease-in-out infinite 0.3s;
+}
+
+@keyframes subtlePulse {
+    0%, 100% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+        body {
+            font-family: 'Tajawal', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .fade-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .fade-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #2563eb; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #1d4ed8; }
+        
+        /* القائمة الجانبية للجوال - تظهر فوق الموقع (overlay) */
+        #mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 320px;
+            height: 100%;
+            background-color: white;
+            box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transition: right 0.3s ease-in-out;
+            padding: 1.5rem;
+            overflow-y: auto;
+        }
+        #mobile-menu.open {
+            right: 0;
+        }
+        
+        /* طبقة خلفية معتمة - تصميم احترافي */
+.overlay-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px); /* لدعم متصفح Safari */
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.overlay-backdrop.active {
+    opacity: 1;
+    visibility: visible;
+}
+        
+        /* تنسيق سلايدر الهيرو مع تأثير التلاشي */
+        .hero-slider-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            object-fit: cover;
+        }
+        .hero-slide.active {
+            opacity: 1;
+        }
+        
+        .lang-dropdown {
+            position: relative;
+        }
+        .lang-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 160px;
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        .lang-menu.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .lang-menu a {
+            display: block;
+            padding: 0.75rem 1rem;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .lang-menu a:hover {
+            background: #eff6ff;
+        }
+        .lang-menu a.active {
+            background: #eff6ff;
+            color: #2563eb;
+            font-weight: 600;
+        }
+        
+        /* تنسيق قائمة اللغة للجوال */
+        .mobile-lang-menu {
+            min-width: 140px;
+        }
+        .mobile-lang-menu a {
+            white-space: nowrap;
+        }
+        
+        /* زر إغلاق القائمة - لون رمادي يتحول إلى أزرق عند التمرير */
+        .close-menu-btn {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            font-size: 1.5rem;
+            color: #4b5563; /* رمادي غامق (مثل لون روابط القائمة) */
+            cursor: pointer;
+            background: none;
+            border: none;
+            transition: color 0.3s ease;
+        }
+        
+        .close-menu-btn:hover {
+            color: #2563eb; /* أزرق عند التمرير */
+        }
+        
+        /* تنسيق جديد لصور المعرض (تظهر كاملة بدون قص) */
+        /* تنسيق جديد لصور المعرض (بدون خلفية) */
+.gallery-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-color: transparent;
+    border-radius: 1rem;
+}	
+        
+        /* ===== تنسيق الرابط النشط في القائمة (Scrollspy) ===== */
+        .nav-link.active, 
+        #mobile-menu a.active {
+            color: #2563eb !important;
+            font-weight: 700 !important;
+            position: relative;
+        }
+        
+        #mobile-menu a.active {
+            border-right: 3px solid #2563eb;
+            padding-right: 10px;
+        }
+        /* أوامر التنسيق الإجبارية للبطاقات */
+.rounded-\[2rem\] { border-radius: 2rem !important; }
+.hover\:-translate-y-2:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
+}
+
+        
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- ===== Preloader ===== -->
+    <div id="preloader">
+        <div class="preloader-ecg">
+            <svg height="80px" width="120px" viewBox="0 0 64 48">
+                <polyline id="back" points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"></polyline>
+                <polyline id="front" points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"></polyline>
+                <polyline id="front2" points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"></polyline>
+            </svg>
+        </div>
+        <div class="preloader-name">
+            د. ياسين الخالدي
+        </div>
+        <div class="preloader-title">
+            أخصائي مختبرات طبية
+        </div>
+    </div>
+
+    <!-- طبقة خلفية معتمة للقائمة الجانبية -->
+    <div id="overlay-backdrop" class="overlay-backdrop"></div>
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="md:hidden text-center">
+                    <a href="#hero" class="text-xl font-bold text-blue-600">د. ياسين الخالدي</a>
+                    <span class="block text-xs text-gray-500">أخصائي مختبرات</span>
+                </div>
+                
+                <button id="menu-btn" class="md:hidden text-2xl text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="hidden md:flex space-x-8 space-x-reverse">
+                    <a href="#hero" class="nav-link text-gray-700 hover:text-blue-600 font-semibold transition">الرئيسية</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 font-semibold transition">نبذة عني</a>
+                    <a href="#research" class="nav-link text-gray-700 hover:text-blue-600 font-semibold transition">أبحاثي العلمية</a>
+                    <a href="#timeline" class="nav-link text-gray-700 hover:text-blue-600 font-semibold transition">معلومات مفيدة</a>
+                    <a href="#reviews" class="nav-link text-gray-700 hover:text-blue-600 font-semibold transition">صور تعليمية</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 font-semibold transition">اتصل بي</a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-4 space-x-reverse mr-4">
+    <a href="https://dr-yaseen-science.blogspot.com/?m=1" target="_blank" class="text-gray-600 hover:text-blue-600 transition text-sm flex items-center">
+        مقالات علمية <i class="fas fa-newspaper mr-1"></i>
+    </a>
+    
+    <a href="images/dr-yaseen-cv.pdf" download class="text-gray-600 hover:text-blue-600 transition text-sm flex items-center">
+        السيرة الذاتية <i class="fas fa-download mr-1"></i>
+    </a>
+    
+    <div class="lang-dropdown">
+        <button id="lang-btn" class="flex items-center text-gray-600 hover:text-blue-600 transition text-sm">
+            تغيير اللغة <i class="fas fa-globe mr-1"></i>
+            <i class="fas fa-chevron-down mr-1 text-xs"></i>
+        </button>
+        <div id="lang-menu" class="lang-menu">
+            <a href="index.html" class="active">العربية</a>
+            <a href="index-en.html">English</a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== القائمة الجانبية للجوال ===== -->
+<div id="mobile-menu" class="md:hidden">
+    <button id="close-menu-btn" class="close-menu-btn">
+        <i class="fas fa-times"></i>
+    </button>
+    
+    <div class="mt-8">
+        <!-- الأقسام الرئيسية (بدون خطوط فواصل) -->
+        <a href="#hero" class="block py-3 text-gray-700 hover:text-blue-600 font-semibold">الرئيسية</a>
+        <a href="#about" class="block py-3 text-gray-700 hover:text-blue-600 font-semibold">نبذة عني</a>
+        <a href="#research" class="block py-3 text-gray-700 hover:text-blue-600 font-semibold">أبحاثي العلمية</a>
+        <a href="#timeline" class="block py-3 text-gray-700 hover:text-blue-600 font-semibold">معلومات مفيدة</a>
+        <a href="#reviews" class="block py-3 text-gray-700 hover:text-blue-600 font-semibold">صور تعليمية</a>
+        <a href="#contact" class="block py-3 text-gray-700 hover:text-blue-600 font-semibold">اتصل بي</a>
+        
+        <!-- الخط الفاصل قبل مقالات علمية -->
+        <hr class="my-3">
+        
+        <a href="https://dr-yaseen-science.blogspot.com/?m=1" target="_blank" class="block py-3 text-gray-600 hover:text-blue-600 flex items-center">
+            مقالات علمية <i class="fas fa-newspaper mr-2"></i>
+        </a>
+        <a href="images/dr-yaseen-cv.pdf" download class="block py-3 text-gray-600 hover:text-blue-600 flex items-center">
+            تحميل السيرة الذاتية <i class="fas fa-download mr-2"></i>
+        </a>
+        
+        <!-- الخط الفاصل قبل تغيير اللغة -->
+        <div class="mt-4 pt-2 border-t border-gray-200">
+            <div class="relative">
+                <button id="mobile-lang-btn" class="flex items-center justify-between w-full text-gray-700 hover:text-blue-600 py-3">
+                    <span class="flex items-center">
+                        تغيير اللغة <i class="fas fa-globe mr-2"></i>
+                    </span>
+                    <i id="mobile-lang-arrow" class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                </button>
+                <div id="mobile-lang-menu" class="hidden mt-2 bg-white rounded-lg overflow-hidden shadow-xl border border-gray-200 z-50 mobile-lang-menu" style="transition: all 0.3s ease; opacity: 0; transform: translateY(-10px); min-width: 140px;">
+                    <a href="index.html" class="block px-4 py-3 text-blue-600 bg-blue-50 font-semibold border-b border-gray-100 whitespace-nowrap">العربية</a>
+                    <a href="index-en.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 whitespace-nowrap">English</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Hero Section مع سلايدر وتأثير تلاشي -->
+    <section id="hero" class="relative h-[600px] overflow-hidden">
+        <div class="hero-slider-container">
+            <img src="images/slider/personal-photo-of-dr-yaseen.webp" class="hero-slide active" alt="صورة شخصية للدكتور ياسين">
+            <img src="images/slider/dryaseen.webp" class="hero-slide" alt="د.ياسين الخالدي">
+            <img src="images/slider/dr-yaseen.webp" class="hero-slide" alt="طبيب">
+        </div>
+        <div class="absolute inset-0 bg-black/50"></div>
+        
+        <div class="absolute inset-0 flex items-center justify-center text-center text-white px-4">
+            <div class="max-w-4xl fade-on-scroll">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    أفضل <span id="animated-word" class="text-blue-400">صحة</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-6">دور الفحوصات المخبرية في تشخيص الأمراض المزمنة والوقاية منها</p>
+                <p class="text-lg mb-8 max-w-2xl mx-auto">تلعب الفحوصات المخبرية دورًا محوريًا في الكشف المبكر عن الأمراض المزمنة مثل السكري وأمراض القلب والكلى.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition transform hover:scale-105">تعرف أكثر</a>
+                    <a href="tel:+967773224293" class="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white px-8 py-3 rounded-full font-semibold transition flex items-center">
+                        <i class="fas fa-phone ml-2"></i> +967 773224293
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section (مع بطاقات بدلاً من الدائرة) -->
+<section id="about" class="py-20 bg-white">
+    <!-- نص نبذة عني -->
+    <div class="container mx-auto px-4 md:px-8">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 fade-on-scroll">نبذة عني</h2>
+        
+        <!-- النص يأخذ العرض كاملاً -->
+        <div class="fade-on-scroll">
+            <p class="text-lg text-gray-700 leading-relaxed">
+                <span class="font-bold text-blue-600">د. ياسين الخالدي</span><br>
+                ماجستير في علم الأحياء الدقيقة، أخصائي مختبرات طبية، وأخصائي في مناعة الفيروسات. حصلت على درجة البكالوريوس في علوم المختبرات الطبية من جامعة بغداد، كما حصلت على درجة الماجستير في علم الأحياء الدقيقة من جامعة صنعاء. أعمل في مجال المختبرات التشخيصية لأكثر من عشرين سنة، حيث أركز على تقديم نتائج دقيقة وموثوقة تساعد في تشخيص الحالات الطبية ووضع خطط علاجية فعالة. أسعى دائمًا إلى تطوير مهاراتي والمساهمة في تحسين جودة الرعاية الصحية من خلال العمل المخبري الدقيق.
+            </p>
+        </div>
+        
+        <!-- البطاقات - أسفل النص، بجانب بعضها -->
+        <div class="fade-on-scroll mt-10">
+            <div class="grid grid-cols-2 gap-6 md:w-1/2 md:mx-auto">
+                <!-- البطاقة الأولى -->
+                <div class="px-8 py-3 md:px-6 md:py-4 bg-blue-50 rounded-[2rem] border-b-8 border-blue-600 shadow-lg transform hover:-translate-y-2 transition-all duration-300 text-center">
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-white rounded-2xl flex items-center justify-center text-blue-600 text-2xl md:text-3xl mb-3 shadow-sm mx-auto">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <span class="block text-3xl md:text-2xl font-black text-blue-900">+20</span>
+                    <span class="text-gray-600 font-bold text-sm">سنة من الخبرة</span>
+                </div>
+
+                <!-- البطاقة الثانية -->
+                <div class="px-8 py-3 md:px-6 md:py-4 bg-blue-50 rounded-[2rem] border-b-8 border-blue-600 shadow-lg transform hover:-translate-y-2 transition-all duration-300 text-center">
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-white rounded-2xl flex items-center justify-center text-blue-600 text-2xl md:text-3xl mb-3 shadow-sm mx-auto">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <span class="block text-2xl md:text-xl font-black text-blue-900">أخصائي</span>
+                    <span class="text-gray-600 font-bold text-sm">مختبرات طبية</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- معرض الصور (Gallery) -->
+    <div class="container mx-auto px-4 md:px-8 mt-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="fade-on-scroll">
+                <img src="images/gallery/dr-yaseen.webp" class="w-full rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500" alt="د. ياسين الخالدي">
+            </div>
+            <div class="fade-on-scroll">
+                <img src="images/gallery/dr-yaseen-portrait.webp" class="w-full rounded-2xl shadow-lg hover:scale-105 transition-transform duration-500" alt="صوره شخصيه الدكتور ياسين الخالدي">
+            </div>
+            <div class="md:col-span-2 fade-on-scroll">
+                <img src="images/gallery/dr-yaseen-committee.webp" class="w-full rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500" alt="صوره الدكتور ياسين الخالدي مع لجنة مناقشة رسالة الماجستير">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Research Section -->
+    <section id="research" class="py-20 bg-white">
+    <div class="container mx-auto px-4 md:px-8">
+        <h2 class="text-4xl font-bold text-center mb-16 text-gray-800 fade-on-scroll">أبحاثي العلمية</h2>
+        
+        <div class="max-w-4xl mx-auto bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-2xl p-8 md:p-12 fade-on-scroll hover:shadow-3xl transition relative border border-gray-100">
+            
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-100 text-blue-600 px-6 py-1.5 rounded-full text-sm font-bold shadow-sm border border-blue-200">
+                Research Paper
+            </div>
+
+            <h3 class="text-2xl font-bold text-blue-600 mb-6 border-r-4 border-blue-600 pr-4 mt-4 leading-tight">
+                انتشار الأجسام المضادة لفيروس المضخم للخلايا بين مرضى السكري من النوع 1 في مدينة عدن باليمن
+            </h3>
+
+            <p class="text-gray-700 leading-relaxed mb-8 text-right">
+                <span class="font-bold text-gray-900">الملخص:</span> الفيروس المضخم للخلايا (CMV) هو فيروس مغلف بالحمض النووي الريبوزي (DNA) ينتمي إلى عائلة فيروسات الهربس. تم ربط فيروس المضخم للخلايا (CMV) بالإصابة بداء السكري من النوع 1 (T1DM). كانت الدراسة عبارة عن تجربة حالة تحليل عينات مصل 100 طفل (1-19 سنة) لديهم تاريخ من TIDM كمجموعة حالات مقارنة بـ 100 طفل سليم كمجموعة مراقبة في مختبرات المدائن في مدينة عدن، خلال الفترة من نوفمبر 2016 إلى ديسمبر 2017. تم تحليل عينات المصل باستخدام اختبار المناعة الكيميائي (ECLIA). تشير النتائج إلى وجود ارتباط (P 0.011) بين الأجسام المضادة IgG لفيروس المضخم للخلايا (CMV) ومرض السكري من النوع الأول (TIDM) لدى الأطفال.
+            </p>
+
+            <div class="text-center md:text-right">
+                <a href="https://www.researchgate.net/publication/353330153_PREVALENCE_OF_CYTOMEGALOVIRUS_ANTIBODIES_AMONG_PATIENTS_WITH_TYPE1_DIABETES_MELLITUS_IN_ADEN_CITY-YEMEN" 
+                   target="_blank" 
+                   class="inline-flex items-center text-blue-600 font-bold hover:text-blue-800 transition text-lg group">
+                    <span>عرض البحث على Research Paper</span>
+                    <i class="fas fa-external-link-alt mr-2 transition-transform group-hover:-translate-y-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Timeline Section -->
+<section id="timeline" class="py-20 bg-gray-100" dir="rtl">
+    <div class="container mx-auto px-4 md:px-8">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 fade-on-scroll">معلومات مفيدة</h2>
+        <div class="max-w-5xl mx-auto relative">
+            <div class="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-blue-400 hidden md:block"></div>
+            
+            <div class="flex flex-col md:flex-row items-center mb-12 fade-on-scroll relative">
+                <div class="md:w-1/2 md:pl-12 order-2 md:order-1 w-full">
+                    <div class="bg-white p-8 rounded-[2rem] shadow-lg border border-gray-100 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl group text-right">
+                        <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-500 mr-0 ml-auto md:hidden">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">التشخيص المبكر ينقذ الأرواح</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">أكثر من 70% من القرارات الطبية تعتمد على نتائج الفحوصات المخبرية. الفحوصات الدورية مثل تحاليل الدم والبول تساعد في اكتشاف الأمراض مبكرًا، مما يزيد من فرص الشفاء. لا تنتظر ظهور الأعراض، قم بإجراء الفحوصات الوقائية بانتظام.</p>
+                    </div>
+                </div>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-blue-50 rounded-2xl hidden md:flex items-center justify-center text-blue-600 text-2xl shadow-lg z-10 border-4 border-white">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2 mb-4 md:mb-0"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center mb-12 fade-on-scroll relative">
+                <div class="md:w-1/2 order-1 mb-4 md:mb-0"></div>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-blue-50 rounded-2xl hidden md:flex items-center justify-center text-blue-600 text-2xl shadow-lg z-10 border-4 border-white">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <div class="md:w-1/2 md:pr-12 order-2 w-full">
+                    <div class="bg-white p-8 rounded-[2rem] shadow-lg border border-gray-100 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl group text-right">
+                        <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-500 mr-0 ml-auto md:hidden">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">اختر المختبرات المعتمدة</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">المختبرات الطبية المعتمدة تضمن دقة النتائج وجودة الخدمة. تأكد من أن المختبر الذي تتعامل معه يتبع معايير عالمية ويستخدم تقنيات حديثة. هذه الخطوة البسيطة قد تحميك من أخطاء التشخيص وتضمن لك نتائج موثوقة.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center mb-12 fade-on-scroll relative">
+                <div class="md:w-1/2 md:pl-12 order-2 md:order-1 w-full">
+                    <div class="bg-white p-8 rounded-[2rem] shadow-lg border border-gray-100 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl group text-right">
+                        <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-500 mr-0 ml-auto md:hidden">
+                            <i class="fas fa-file-medical"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">افهم نتائج فحوصاتك</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">نتائج الفحوصات ليست مجرد أرقام! اطلب من طبيبك شرحها بشكل واضح لتفهم حالتك الصحية. معرفة معنى كل تحليل يساعدك في اتخاذ قرارات صحية أفضل، مثل تعديل نظامك الغذائي أو تغيير نمط حياتك.</p>
+                    </div>
+                </div>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-blue-50 rounded-2xl hidden md:flex items-center justify-center text-blue-600 text-2xl shadow-lg z-10 border-4 border-white">
+                    <i class="fas fa-file-medical"></i>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2 mb-4 md:mb-0"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center mb-12 fade-on-scroll relative">
+                <div class="md:w-1/2 order-1 mb-4 md:mb-0"></div>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-blue-50 rounded-2xl hidden md:flex items-center justify-center text-blue-600 text-2xl shadow-lg z-10 border-4 border-white">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="md:w-1/2 md:pr-12 order-2 w-full">
+                    <div class="bg-white p-8 rounded-[2rem] shadow-lg border border-gray-100 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl group text-right">
+                        <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-500 mr-0 ml-auto md:hidden">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">الفحوصات الوقائية: عادة عالمية</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">في الدول المتقدمة، الفحوصات الدورية جزء أساسي من الثقافة الصحية. اتبع هذه العادة العالمية وقم بإجراء فحوصات سنوية للكشف عن الأمراض المزمنة مثل السكري وأمراض القلب.</p>
+                        <p>الوقاية دائمًا أفضل من العلاج.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center fade-on-scroll relative">
+                <div class="md:w-1/2 md:pl-12 order-2 md:order-1 w-full">
+                    <div class="bg-white p-8 rounded-[2rem] shadow-lg border border-gray-100 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl group text-right">
+                        <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-500 mr-0 ml-auto md:hidden">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">نصيحة شخصية</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">من خلال خبرتي في تشخيص الأمراض، تعلمت أن الدقة تبدأ من التحضير الجيد للفحوصات. سواء كنت تتعامل مع عدوى فيروسية أو اضطرابات مناعية، اتبع تعليمات الطبيب بدقة (مثل الصيام أو تجنب أدوية معينة) لضمان نتائج موثوقة. تذكر أن هذه الخطوات البسيطة قد تكون الفارق بين التشخيص الصحيح والخطأ، وأن صحتك تستحق دائمًا أفضل عناية ممكنة.</p>
+                    </div>
+                </div>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-blue-50 rounded-2xl hidden md:flex items-center justify-center text-blue-600 text-2xl shadow-lg z-10 border-4 border-white">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2 mb-4 md:mb-0"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 fade-on-scroll">صور تعليمية</h2>
+            
+            <div class="relative max-w-4xl mx-auto fade-on-scroll" id="carousel-container">
+                <div class="relative h-[400px] md:h-[500px] rounded-2xl shadow-2xl overflow-hidden bg-gray-100">
+                    <img src="images/slider/image1.webp" class="absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-1000 opacity-100" id="slide1" alt="صورة تعليمية 1">
+                    <img src="images/slider/image2.webp" class="absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-1000 opacity-0" id="slide2" alt="صورة تعليمية 2">
+                    <img src="images/slider/image3.webp" class="absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-1000 opacity-0" id="slide3" alt="صورة تعليمية 3">
+                    <img src="images/slider/image4.webp" class="absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-1000 opacity-0" id="slide4" alt="صورة تعليمية 4">
+                    <img src="images/slider/image5.webp" class="absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-1000 opacity-0" id="slide5" alt="صورة تعليمية 5">
+                    <img src="images/slider/image6.webp" class="absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-1000 opacity-0" id="slide6" alt="صورة تعليمية 6">
+                </div>
+                
+                <button id="prev-btn" class="absolute top-1/2 -translate-y-1/2 right-4 bg-white/80 hover:bg-white text-blue-600 w-12 h-12 rounded-full shadow-lg flex items-center justify-center text-2xl transition z-10">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <button id="next-btn" class="absolute top-1/2 -translate-y-1/2 left-4 bg-white/80 hover:bg-white text-blue-600 w-12 h-12 rounded-full shadow-lg flex items-center justify-center text-2xl transition z-10">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="flex justify-center mt-6 space-x-2 space-x-reverse" id="carousel-dots">
+                    <span class="w-3 h-3 bg-blue-600 rounded-full cursor-pointer" data-index="0"></span>
+                    <span class="w-3 h-3 bg-gray-300 rounded-full cursor-pointer" data-index="1"></span>
+                    <span class="w-3 h-3 bg-gray-300 rounded-full cursor-pointer" data-index="2"></span>
+                    <span class="w-3 h-3 bg-gray-300 rounded-full cursor-pointer" data-index="3"></span>
+                    <span class="w-3 h-3 bg-gray-300 rounded-full cursor-pointer" data-index="4"></span>
+                    <span class="w-3 h-3 bg-gray-300 rounded-full cursor-pointer" data-index="5"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-4xl font-bold text-center mb-4 text-gray-800 fade-on-scroll">معلومات الاتصال</h2>
+            <p class="text-center text-gray-600 mb-12 fade-on-scroll">يمكنك التواصل معي عبر الطرق التالية</p>
+            
+            <div class="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto">
+                <div class="lg:w-1/2 fade-on-scroll">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 text-center hover:shadow-2xl transition">
+                        <div class="w-24 h-24 rounded-full border-4 border-blue-200 mx-auto flex items-center justify-center text-blue-600 text-4xl mb-4">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">البريد الإلكتروني</h3>
+                        <a href="mailto:yaseenalkhaledi38@gmail.com" class="text-blue-600 hover:underline text-lg">yaseenalkhaledi38@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 fade-on-scroll">
+                    <div class="bg-white rounded-2xl shadow-xl p-8">
+                        <form id="contact-form">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                <input type="text" name="name" placeholder="اسمك" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+                                <input type="email" name="email" placeholder="بريدك الإلكتروني" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+                            </div>
+                            <input type="text" name="subject" placeholder="الموضوع" required class="w-full px-4 py-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+                            <textarea name="message" rows="6" placeholder="الرسالة" required class="w-full px-4 py-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-600 transition"></textarea>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition transform hover:scale-105 shadow-lg">
+                                إرسال الرسالة
+                            </button>
+                        </form>
+                        <div id="success-message" class="hidden mt-4 p-3 bg-green-100 text-green-700 rounded-lg text-center">
+                            تم إرسال رسالتك بنجاح!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 mb-4">يمكنك أيضًا التواصل عبر:</p>
+                <div class="flex justify-center space-x-3 space-x-reverse">
+                    <a href="https://www.facebook.com/alkhaledi009" target="_blank" class="w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center text-lg transition transform hover:scale-110"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://t.me/+967773224293" target="_blank" class="w-10 h-10 rounded-full bg-blue-500 hover:bg-blue-600 text-white flex items-center justify-center text-lg transition transform hover:scale-110"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://youtube.com/@alkhaledi009" target="_blank" class="w-10 h-10 rounded-full bg-red-600 hover:bg-red-700 text-white flex items-center justify-center text-lg transition transform hover:scale-110"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/yaseenalkhaledi" target="_blank" class="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 hover:from-yellow-600 hover:via-pink-600 hover:to-purple-700 text-white flex items-center justify-center text-lg transition transform hover:scale-110"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/+967773224293" target="_blank" class="w-10 h-10 rounded-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center text-lg transition transform hover:scale-110"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com/@dryaseen84" target="_blank" class="w-10 h-10 rounded-full bg-black hover:bg-gray-800 text-white flex items-center justify-center text-lg transition transform hover:scale-110"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://x.com/yaseenalkhaledi" target="_blank" class="w-10 h-10 rounded-full bg-black hover:bg-gray-800 text-white flex items-center justify-center text-lg transition transform hover:scale-110"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 pt-8 border-t border-gray-300">
+    <p class="text-gray-600">جميع الحقوق محفوظة © <span class="font-bold text-blue-600">د. ياسين الخالدي</span> 2025</p>
+</div>
+        </div>
+    </section>
+
+    <!-- زر العودة للأعلى -->
+    <button id="scroll-to-top" class="fixed bottom-6 right-6 w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg flex items-center justify-center text-2xl transition opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- جافاسكريبت -->
+    
+    <script>
+        // ===== Scrollspy: تمييز الرابط النشط في القائمة =====
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const mobileNavLinks = document.querySelectorAll('#mobile-menu a[href^="#"]');
+        
+        function updateActiveLink() {
+            let current = '';
+            const scrollPosition = window.scrollY + 150; // 150px offset للشريط العلوي
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            // تحديث الروابط في القائمة الرئيسية (للكمبيوتر)
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href').substring(1);
+                if (href === current) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // تحديث الروابط في القائمة الجانبية (للهاتف)
+            mobileNavLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href').substring(1);
+                if (href === current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveLink);
+        window.addEventListener('load', updateActiveLink);
+
+        // ===== الميزة الثالثة: إغلاق القائمة الجانبية عند تغيير حجم الشاشة =====
+        const mobileMenu = document.getElementById('mobile-menu');
+        const overlayBackdrop = document.getElementById('overlay-backdrop');
+        
+        window.addEventListener('resize', function() {
+            if (window.innerWidth >= 768) { // إذا أصبحت الشاشة أكبر من 768px (كمبيوتر أو تابلت)
+                if (mobileMenu) {
+                    mobileMenu.classList.remove('open');
+                }
+                if (overlayBackdrop) {
+                    overlayBackdrop.classList.remove('active');
+                }
+                document.body.style.overflow = '';
+            }
+        });
+
+
+    // هذا الكود يضمن إخفاء الـ preloader   
+    function forceHidePreloader() {
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+            preloader.style.opacity = '0';
+            setTimeout(() => {
+                preloader.style.display = 'none';
+                document.body.style.overflow = 'auto'; // لضمان عمل السكرول
+            }, 500);
+        }
+    }
+
+    // الإخفاء الطبيعي عند اكتمال التحميل
+    window.addEventListener('load', forceHidePreloader);
+
+
+        // دالة لحساب ارتفاع الشريط العلوي
+        function getNavbarHeight() {
+            const navbar = document.querySelector('nav');
+            return navbar ? navbar.offsetHeight : 80;
+        }
+
+        // التمرير السلس لجميع الروابط
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    const navbarHeight = getNavbarHeight();
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+                    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // تأثير التلاشي عند التمرير
+        const fadeElements = document.querySelectorAll('.fade-on-scroll');
+        function checkFade() {
+            fadeElements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                if (rect.top < windowHeight * 0.9 && rect.bottom > 0) {
+                    element.classList.add('visible');
+                } else {
+                    element.classList.remove('visible');
+                }
+            });
+        }
+        window.addEventListener('scroll', checkFade);
+        window.addEventListener('load', checkFade);
+
+        // سلايدر الهيرو مع تأثير التلاشي
+        const heroSlides = document.querySelectorAll('.hero-slide');
+        let currentHeroIndex = 0;
+        
+        function changeHeroSlide() {
+            heroSlides[currentHeroIndex].classList.remove('active');
+            currentHeroIndex = (currentHeroIndex + 1) % heroSlides.length;
+            heroSlides[currentHeroIndex].classList.add('active');
+        }
+        
+        setInterval(changeHeroSlide, 5000); // تبديل كل 5 ثوانٍ
+
+        // الكلمات المتحركة
+        const words = ['صحة', 'أيام', 'حياة'];
+        let wordIndex = 0;
+        const animatedWord = document.getElementById('animated-word');
+        setInterval(() => {
+            wordIndex = (wordIndex + 1) % words.length;
+            animatedWord.style.opacity = '0';
+            setTimeout(() => {
+                animatedWord.textContent = words[wordIndex];
+                animatedWord.style.opacity = '1';
+            }, 200);
+        }, 3000);
+
+        // قائمة الجوال (تظهر فوق الموقع)
+        const menuBtn = document.getElementById('menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        
+        function openMenu() {
+            mobileMenu.classList.add('open');
+            overlayBackdrop.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMenu() {
+            mobileMenu.classList.remove('open');
+            overlayBackdrop.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        if (menuBtn) {
+            menuBtn.addEventListener('click', openMenu);
+        }
+        if (closeMenuBtn) {
+            closeMenuBtn.addEventListener('click', closeMenu);
+        }
+        if (overlayBackdrop) {
+            overlayBackdrop.addEventListener('click', closeMenu);
+        }
+        
+        // إغلاق القائمة عند النقر على رابط داخلها
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // قائمة اللغة لسطح المكتب
+        const langBtn = document.getElementById('lang-btn');
+        const langMenu = document.getElementById('lang-menu');
+        if (langBtn && langMenu) {
+            langBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                langMenu.classList.toggle('show');
+            });
+            document.addEventListener('click', (e) => {
+                if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+                    langMenu.classList.remove('show');
+                }
+            });
+        }
+
+        // قائمة اللغة للجوال
+        const mobileLangBtn = document.getElementById('mobile-lang-btn');
+        const mobileLangMenu = document.getElementById('mobile-lang-menu');
+        const mobileLangArrow = document.getElementById('mobile-lang-arrow');
+        
+        if (mobileLangBtn && mobileLangMenu) {
+            mobileLangBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                if (mobileLangMenu.classList.contains('hidden')) {
+                    mobileLangMenu.classList.remove('hidden');
+                    setTimeout(() => {
+                        mobileLangMenu.style.opacity = '1';
+                        mobileLangMenu.style.transform = 'translateY(0)';
+                    }, 10);
+                    if (mobileLangArrow) {
+                        mobileLangArrow.style.transform = 'rotate(180deg)';
+                    }
+                } else {
+                    mobileLangMenu.style.opacity = '0';
+                    mobileLangMenu.style.transform = 'translateY(-10px)';
+                    setTimeout(() => {
+                        mobileLangMenu.classList.add('hidden');
+                    }, 300);
+                    if (mobileLangArrow) {
+                        mobileLangArrow.style.transform = 'rotate(0deg)';
+                    }
+                }
+            });
+            
+            mobileLangMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileLangMenu.style.opacity = '0';
+                    mobileLangMenu.style.transform = 'translateY(-10px)';
+                    setTimeout(() => {
+                        mobileLangMenu.classList.add('hidden');
+                    }, 300);
+                    if (mobileLangArrow) {
+                        mobileLangArrow.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+            
+            document.addEventListener('click', function(e) {
+                if (!mobileLangBtn.contains(e.target) && !mobileLangMenu.contains(e.target)) {
+                    mobileLangMenu.style.opacity = '0';
+                    mobileLangMenu.style.transform = 'translateY(-10px)';
+                    setTimeout(() => {
+                        mobileLangMenu.classList.add('hidden');
+                    }, 300);
+                    if (mobileLangArrow) {
+                        mobileLangArrow.style.transform = 'rotate(0deg)';
+                    }
+                }
+            });
+        }
+
+        // سلايدر الصور التعليمية
+        const slides = [
+            document.getElementById('slide1'),
+            document.getElementById('slide2'),
+            document.getElementById('slide3'),
+            document.getElementById('slide4'),
+            document.getElementById('slide5'),
+            document.getElementById('slide6')
+        ];
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const dots = document.querySelectorAll('#carousel-dots span');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            if (!slides[0]) return;
+            slides.forEach(slide => {
+                if (slide) {
+                    slide.classList.add('opacity-0');
+                    slide.classList.remove('opacity-100');
+                }
+            });
+            if (slides[index]) {
+                slides[index].classList.remove('opacity-0');
+                slides[index].classList.add('opacity-100');
+            }
+            dots.forEach((dot, i) => {
+                if (i === index) {
+                    dot.classList.remove('bg-gray-300');
+                    dot.classList.add('bg-blue-600');
+                } else {
+                    dot.classList.remove('bg-blue-600');
+                    dot.classList.add('bg-gray-300');
+                }
+            });
+            currentSlide = index;
+        }
+
+        if (nextBtn && prevBtn && dots.length) {
+            nextBtn.addEventListener('click', () => {
+                let nextIndex = (currentSlide + 1) % slides.length;
+                showSlide(nextIndex);
+            });
+            prevBtn.addEventListener('click', () => {
+                let prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(prevIndex);
+            });
+            dots.forEach(dot => {
+                dot.addEventListener('click', (e) => {
+                    let index = parseInt(e.target.dataset.index);
+                    showSlide(index);
+                });
+            });
+            setInterval(() => {
+                let nextIndex = (currentSlide + 1) % slides.length;
+                showSlide(nextIndex);
+            }, 4000);
+        }
+
+        // زر العودة للأعلى
+        const scrollBtn = document.getElementById('scroll-to-top');
+        if (scrollBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollBtn.style.opacity = '1';
+                    scrollBtn.style.visibility = 'visible';
+                } else {
+                    scrollBtn.style.opacity = '0';
+                    scrollBtn.style.visibility = 'hidden';
+                }
+            });
+            scrollBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        // نموذج الاتصال
+        const contactForm = document.getElementById('contact-form');
+        const successMessage = document.getElementById('success-message');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                successMessage.classList.remove('hidden');
+                contactForm.reset();
+                setTimeout(() => {
+                    successMessage.classList.add('hidden');
+                }, 5000);
+            });
+        }
+    </script>
+</body>
+</html>
