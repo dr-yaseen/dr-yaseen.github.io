@@ -725,7 +725,11 @@
             </div>
             
             <div class="text-center mt-12 pt-8 border-t border-gray-300">
-    <p class="text-gray-600">جميع الحقوق محفوظة © <span class="font-bold text-blue-600">د. ياسين الخالدي</span> 2025</p>
+    <p class="text-gray-600">
+        جميع الحقوق محفوظة © 
+        <span class="font-bold text-blue-600">د. ياسين الخالدي</span> 
+        <span id="year"> 2025</span>
+    </p>
 </div>
         </div>
     </section>
@@ -1066,6 +1070,9 @@
                 }, 5000);
             });
         }
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
     </script>
 </body>
 </html>
